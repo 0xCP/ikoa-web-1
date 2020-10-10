@@ -23,4 +23,4 @@ fi
 
 
 # $PORT is set by Heroku            
-gunicorn --worker-class eventlet -w 1 -c gunicorn.conf.py --bind 0.0.0.0:"$PORT" wsgi --preload
+gunicorn --worker-class eventlet -w 1 -c gunicorn.conf.py --bind 0.0.0.0:23456 wsgi --preload
